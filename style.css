@@ -1,0 +1,127 @@
+/* General reset and layout */
+html, body {
+    height: 100%; /* Ensure full height of the viewport */
+    margin: 0;
+    padding: 0;
+    background-color: #0e6f7b; /* Full screen background color */
+    color: white;
+}
+
+/* Body and layout configuration */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%; /* Ensure body takes full height */
+}
+
+/* Header styling */
+header {
+    background: #0e6f7b; /* Match the blue background */
+    padding: 0;
+    width: 100%;
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Occupy half of the viewport */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 40px;
+}
+
+.nav-left {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-left button, .nav-right button {
+    background: none;
+    border: 2px solid white;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+}
+
+.nav-left .active {
+    background-color: white;
+    color: #0e6f7b;
+}
+
+.nav-right .login {
+    background-color: white;
+    border: none;
+    color: #0e6f7b;
+}
+
+.header-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+h1 {
+    font-size: 3em;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    font-style: italic;
+    font-size: 1.2em;
+    margin-top: -10px;
+}
+
+.cta-button {
+    background-color: white;
+    color: #0e6f7b;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: lightgray;
+}
+
+/* Main content area */
+main {
+    flex: 5; /* Fill available space */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0e6f7b; /* Ensures main matches the header */
+    height: 50vh; /* Occupy the remaining half of the viewport */
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2em;
+}
+
+/* Footer styling */
+footer {
+    background: #e5e5e5;
+    text-align: center;
+    padding: 20px;
+    font-size: 1em;
+    color: #333;
+} 
