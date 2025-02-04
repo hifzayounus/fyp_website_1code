@@ -1,0 +1,149 @@
+/* General page styling */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #0e6f7b;
+    font-family: Arial, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Enlarged Login container */
+.login-container {
+    width: 420px; /* Increased width */
+    padding: 40px; /* More padding for better spacing */
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #0e6f7b;
+}
+
+/* Enlarged headings */
+.login-container h2 {
+    margin-bottom: 25px;
+    font-size: 2em; /* Increased size */
+}
+
+/* Input fields - Adjusted size */
+.login-container input {
+    width: 92%;
+    padding: 14px; /* Bigger input fields */
+    margin: 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 17px;
+    color: #333;
+}
+
+/* Enlarged Login button */
+.login-button {
+    width: 100%;
+    padding: 14px;
+    background-color: #0e6f7b;
+    border: none;
+    color: white;
+    font-size: 19px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.login-button:hover {
+    background-color: #095961;
+}
+
+/* Divider */
+.divider {
+    text-align: center;
+    margin: 18px 0;
+    font-size: 15px;
+    color: gray;
+    position: relative;
+}
+
+.divider span {
+    background: white;
+    padding: 5px 12px;
+    font-weight: bold;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    display: block;
+    width: 42%;
+    height: 1px;
+    background: gray;
+    position: absolute;
+    top: 50%;
+}
+
+.divider::before {
+    left: 4%;
+}
+
+.divider::after {
+    right: 4%;
+}
+
+/* Social login buttons */
+.social-login button {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.google-login {
+    background-color: #db4437;
+    color: white;
+}
+
+.google-login:hover {
+    background-color: #c1351d;
+}
+
+.linkedin-login {
+    background-color: #0077b5;
+    color: white;
+}
+
+.linkedin-login:hover {
+    background-color: #005582;
+}
+
+.facebook-login {
+    background-color: #1877f2;
+    color: white;
+}
+
+.facebook-login:hover {
+    background-color: #1255a6;
+}
+
+/* Enlarged Sign-up text */
+.login-container p {
+    margin-top: 18px;
+    font-size: 15px;
+}
+
+.login-container a {
+    color: #0e6f7b;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+

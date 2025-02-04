@@ -1,42 +1,40 @@
-/* General reset and layout */
+/* General Reset */
 html, body {
-    height: 100%; /* Ensure full height of the viewport */
+    height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #0e6f7b; /* Full screen background color */
+    background-color: #0e6f7b;
     color: white;
-}
-
-/* Body and layout configuration */
-body {
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
-    min-height: 100%; /* Ensure body takes full height */
 }
 
-/* Header styling */
-header {
-    background: #0e6f7b; /* Match the blue background */
-    padding: 0;
-    width: 100%;
-    position: relative;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 50vh; /* Occupy half of the viewport */
-}
-
+/* Fix navbar at the top */
 nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #0e6f7b;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    padding: 10px 40px;
+    padding: 15px 40px;
+    z-index: 1000; /* Ensure navbar stays on top */
 }
 
+/* Adjust navbar spacing */
+.nav-right {
+    margin-left: -10px; /* Adjust this value to shift the buttons to the left */
+}
+
+/* Fix body spacing so content doesn't get hidden under fixed nav */
+body {
+    padding-top: 60px; /* Adjust based on navbar height */
+}
+
+/* Navbar buttons */
 .nav-left {
     display: flex;
     gap: 30px;
@@ -64,26 +62,50 @@ nav {
     color: #0e6f7b;
 }
 
-.header-content {
-    text-align: center;
+/* Main Section: Center Text & Image Horizontally */
+.container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center content horizontally */
+    gap: 50px;
+    height: 90vh; /* Take almost full screen */
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
-h1 {
-    font-size: 3em;
+/* Text Content: Left Aligned */
+.text-content {
+    flex: 1;
+    text-align: left;
+}
+
+.text-content h1 {
+    font-size: 4em;
+    font-weight: bold;
     letter-spacing: 2px;
+    margin-bottom: 10px;
 }
 
 .subtitle {
     font-style: italic;
-    font-size: 1.2em;
-    margin-top: -10px;
+    font-size: 1.5em;
 }
 
+/* Image on Right */
+.image-container {
+    flex: 1;
+    text-align: center;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* CTA Button */
 .cta-button {
     background-color: white;
     color: #0e6f7b;
@@ -99,29 +121,14 @@ h1 {
     background-color: lightgray;
 }
 
-/* Main content area */
-main {
-    flex: 5; /* Fill available space */
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #0e6f7b; /* Ensures main matches the header */
-    height: 50vh; /* Occupy the remaining half of the viewport */
-}
-
-.content {
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 1.2em;
-}
-
-/* Footer styling */
+/* Footer */
 footer {
     background: #e5e5e5;
     text-align: center;
     padding: 20px;
     font-size: 1em;
     color: #333;
-} 
+}
+
+
+
